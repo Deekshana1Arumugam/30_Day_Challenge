@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(78, 210, 30);
+}
+.feedback-container{
+    background-color: rgb(247, 249, 251);
+    width: 400px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0.3);
+    border-radius: 10px;
+    position: relative;
+
+}
+.emoji-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.emoji-container .fa-regular{
+    margin: 1px;
+    transform: translateX(0);
+    transition: transform 0.2s;
+}
+
+.ratingcontainer{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60%;
+
+}
+.fa-solid{
+    color:rgb(147, 134, 134);
+    cursor: pointer;
+
+}
+.ratingcontainer  .first{
+    color: rgb(255, 217, 0);
+   
+}
