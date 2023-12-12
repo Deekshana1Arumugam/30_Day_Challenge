@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.psGn{
+    background-color: rgb(220, 20, 60,.4);
+  
+    width: 500px;
+   padding: 20px;
+   border-radius: 10px;
+   margin: 10px;
+}
+.inpt-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border:solid 1px black;
+    border-radius: 10px;
+}
+input{
+    border: none;
+    background-color: transparent;
+    outline:none;
+   font-size: 20px;
+   letter-spacing: 4px;
+}
+input::placeholder{
+    letter-spacing:0;
+}
+.fa-copy{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.fa-copy:hover{
+    opacity: 1;
+}
+.btn{
+    background-color: rgb(85, 79, 79);
+    color: azure;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 20px;
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(31, 150, 10);
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.alert_container{
+    position: fixed;
+    width: 300px;
+    height: 45px;
+    background-color: rgb(133, 247, 133);
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(rgb(0, 0, 0,0.3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.4s;
+}
+.active.alert_container{
+right:-300px;
+}
